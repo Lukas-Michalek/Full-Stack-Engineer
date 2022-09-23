@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 
-<!-- Project is an exercise on how to use together CSS with HTML. It is something like first project, or perhaps first web page-->
+<!-- The main task is to recreate webpage from image provided in resources-->
 
-<html lang="en">
+<!-- new comment -->
+
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>Desmonto`s Arts and Crafts</title>
+    <meta charset="utf-8">
+    <link href="./resources/css/index.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/index.css" type="">
-    <title>Grrit-ify</title>
 </head>
-<body>
 
-    <!-- Navbar section-->
-    <nav class="navbar">
-        <ul>
-            <li ><a class="blue" href="">Gritty-fi</a></li>
-            <li><a href="">Gritty Landing Banner</a></li>
-            <li><a href="">Gritter</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Banner Section -> Where the Main content will be-->
-    <div class="banner">
-        <h1>Gritty`s Landing Banner</h1>
+<div id="wrapper">
+    <body>
+        <header>
+            Dasmoto`s Arts & Crafts
+        </header>
 
-        <!-- It is good practise to use ./ indicating RELATIVE PATH. So what it say is hey, I want ot link something that is located on the same level I am currently at what is resources-->
+        <h1 id="brushes" class="section_heading">Brushes</h1>
 
-        <img id="small-gritty" src="./resources/images/gritty.png" alt="Griity`s Main Photo">
-        
-        <p>Cos Everything is better with Gritty`s face on it ya fools...</p>
-        <button>Subscribe or I`ll eat you... Ya worm!</button>
-    </div>
+        <img src="./resources/images/hacksaw.jpeg" alt="Bunch of Brushes">
 
-    <!-- Gritter Section-->
-    
-        <div class="gritter_section">
-            <!-- The main reason I am using span here is, because I know that each h1 and each h2 tags and all of the heading tags of HTML come up with their own custom CSS and span is kind of like a hack tp get around that. So instead of using h1 and going in with CSS and customizing or kind of overriding the default CSS that comes with each h1 tags, what I am doing with SPAN is saying, all right I don`t want any of that default styling, just let me start with like the standard stylling that SPAN tag comes with which is very minimal compared to the H1 tags or H2-->  
+        <h1>Hacksaw Brushes</h1>
+        <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.
+            <span class="prize">Starting at $3.00 / brush.</span>    
+        </p>
 
-            <span class="bold" id="gritter">Gritter</span>
-            <p class="bold">Social MEdia dedicated to Gritty... and only Gritty ... cos the Gritty is the lad!</p>
+        <h1 id="frames" class="section_heading">Frames</h1>
+        <img src="./resources/images/frames.jpeg" alt="Frames of paintings">
 
-            <form>
-                <input type="text"/>
-                <input type="submit" value="Submit"/>
-            </form>    
+        <h1>Art Frames(assorted)</h1>
+        <p>Assorted frames made of different material, including MDF, birchwood, and PDE. Select frames can be sanded and painted according to your needs.
+            <span class="prize">Starting at $2.00 / frame.</span>
+        </p>
 
-            <div id="greets">
-                <ul>
-                    <li>
-                        <div class="avatar"></div><span>Hey There! It`s Gritty.</span>
-                    </li>
+        <h1 class="heading" id="paint">Paint</h1>
 
-                    <li>
-                        <div class="avatar"></div><span>And Gritty again...</span>
-                    </li>
+        <img src="./resources/images/finnish.jpeg" alt="Clean Finnish Paint">
 
-                    <li>
-                        <div class="avatar"></div><span>Aaaaand Gritty agaaaain....</span>
-                    </li>
-                </ul>
-            </div>
-    </div>   
-</body>
+        <h1>Clean Finnish Paint</h1>
+
+        <p>
+            Imported paint from Finnland. Over 256 colors available in-store, varying in quantity(1 oz. to 8oz.). Clean Finnish paint microbinds to canvas, increasing the finish and longevity of any artwork. 
+            <span class="prize">Starting at $5.00 / tube.</span>
+
+        </p>
+
+    </body>
+</div>
 </html>

@@ -1,82 +1,51 @@
-.navbar {
-    position:fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
+*{
+    box-sizing: border-box;
+    padding: 5px;
 }
 
-.navbar li {
-    display: inline-block;
-    padding: 0px 20px; 
+#wrapper {
+    height: 1600px;
+    width: 1200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    
+    
 }
 
-.navbar a {
-    text-decoration: none;
-    color: black;   
-}
-.banner {
-    background-color: #4D00FF;
-    color: white;
-    margin-top: 50px;
-    text-align: center;
-    padding: 100px 0;   
-}
 
-#small-gritty {
-    height: 400px;
-    width: 300px;
 
-    /*The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.*/
-
-    /*The filter property defines visual effects (like blur and saturation) to an element (often <img>).*/
-
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/filter#try_it*/
-    /*https://www.w3schools.com/cssref/css3_pr_filter.asp*/
-
-    filter: drop-shadow(1px 1px 1px black);
-
-}
-
-.gritter_section {
-    padding: 20px 50px;
-}
-
-#gritter {
-    color: #4D00FF;
+header {
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 100px;
-    
-}
-
-.avatar {
-    /* ../ -> go one level up
-        ./ -> access from same level*/
-    background-image: url("../images/gritty.png");
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("../images/pattern.jpeg");
     background-size: cover;
-    height: 50px;
-    width: 50px;
     
-    /* border-radius: 50% makes the container(image in this case) round*/
-    border-radius: 50%;
-
-    display: inline-block;
-
-    /* vertical-align:middle -> Align the 'middle' baseline of the inline element with the middle baseline of the parent.*/
-    vertical-align:middle;
 }
 
-.bold {
-    font-weight: 900;
-
+.section_heading {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
 }
 
-a.blue {
+#brushes {
+    background-color: mediumspringgreen;
+}
+
+#frames {
+    background-color: lightcoral;
+}
+
+#paint {
+    background-color: skyblue;
+}
+
+.prize {
+    font-family: Helvetica;
+    font-weight: bold;
     color: blue;
-    
-    /*This is a special "Good Practice" when styling anchor tags(such as color and other effects). It is necessary to do it this way!!! */
-
 }
-
-#greets ul {
-    list-style-type: none;
-}
-
